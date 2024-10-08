@@ -16,8 +16,8 @@ public class FileUploadTest {
         WebDriver driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/upload");
 
-        // Задаем путь к файлу
-        String filePath = Paths.get("path/to/file.txt").toAbsolutePath().toString();
+        //  путь к файлу
+        String filePath = Paths.get("/to/file.txt").toAbsolutePath().toString();
         WebElement uploadElement = driver.findElement(By.id("file-upload"));
         uploadElement.sendKeys(filePath);
 
